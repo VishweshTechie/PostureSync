@@ -1,0 +1,86 @@
+:root {
+    --bg-color: #f4f7f6;
+    --primary-color: #2c3e50;
+    --happy-color: #27ae60;
+    --sick-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Pet UI */
+#pet-container {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+#pet-container.happy {
+    background-color: rgba(39, 174, 96, 0.1);
+    border: 2px solid var(--happy-color);
+    color: var(--happy-color);
+}
+
+#pet-container.sick {
+    background-color: rgba(231, 76, 60, 0.1);
+    border: 2px solid var(--sick-color);
+    color: var(--sick-color);
+    animation: shake 0.5s infinite;
+}
+
+#pet-emoji {
+    font-size: 100px;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Dashboard & Webcam */
+.dashboard {
+    background: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    font-size: 1.1rem;
+}
+
+.webcam-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+canvas {
+    display: block;
+    transform: scaleX(-1); /* Mirror the webcam */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
