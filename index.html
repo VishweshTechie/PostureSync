@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosturePet | MVP</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- MediaPipe dependencies via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐾 PosturePet</h1>
+            <p>Keep your posture perfect to keep your pet happy!</p>
+        </header>
+
+        <main>
+            <!-- The Virtual Pet UI -->
+            <div id="pet-container" class="happy">
+                <div id="pet-emoji">🐶</div>
+                <h2 id="pet-status">Happy & Healthy!</h2>
+            </div>
+
+            <!-- Debug Dashboard -->
+            <div class="dashboard">
+                <p>Posture Score: <span id="posture-score">Calculating...</span></p>
+                <p>Status: <span id="slouch-warning">Good</span></p>
+            </div>
+        </main>
+
+        <!-- Hidden Video Element for MediaPipe -->
+        <video id="input_video" style="display:none;" autoplay playsinline></video>
+        
+        <!-- Small Canvas to show the user their webcam -->
+        <div class="webcam-container">
+            <canvas id="output_canvas" width="320" height="240"></canvas>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
