@@ -1,7 +1,7 @@
 # PostureSync
 # 🐾 PosturePet: The Desk-Worker's Companion
 
-![PosturePet Demo](https://via.placeholder.com/800x400?text=PosturePet+Demo+GIF+Placeholder)
+![PosturePet Demo]([https://share.gemini.google/Ye4WKI8940Gf)
 
 **Submission for the AI for Healthcare & Well-being Track**
 
@@ -10,8 +10,8 @@ IT professionals and students routinely suffer from chronic back pain due to poo
 **PosturePet** solves this by gamifying healthcare. We use zero-training, in-browser AI to track your posture and connect it to the health of a virtual desktop pet. Sit up straight, and your pet thrives. Slouch for too long, and your pet gets sick—transforming a healthy habit into a rewarding daily game.
 
 ## 🔗 Quick Links
-* **Live Demo:** [Insert Link Here]
-* **Demo Video (3 mins):** [Insert Link Here]
+* **Live Demo:** [https://drive.google.com/file/d/1BK5Cjc-s5yPzGpwZWe6jLwzGp4OqTztK/view?usp=drive_link]
+* **Demo Video (3 mins):** [https://drive.google.com/file/d/1BK5Cjc-s5yPzGpwZWe6jLwzGp4OqTztK/view?usp=drive_link]
 
 ---
 
