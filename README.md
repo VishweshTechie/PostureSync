@@ -1,7 +1,7 @@
 # PostureSync
 # 🐾 PosturePet: The Desk-Worker's Companion
 
-![PosturePet Demo]([https://share.gemini.google/Ye4WKI8940Gf)
+![PosturePet Demo]([https://kommodo.ai/i/RnMQnzSv2uEbxVt7oSDW)
 
 **Submission for the AI for Healthcare & Well-being Track**
 
